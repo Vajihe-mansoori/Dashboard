@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import "./Sidebar.css";
 import Logo from "../imgs/logo.png";
 import { UilSignOutAlt } from "@iconscout/react-unicons";
 import { SidebarData } from "../Data/Data";
 import { UilBars } from "@iconscout/react-unicons";
 import { motion } from "framer-motion";
+import "./Sidebar.css";
 
 const Sidebar = () => {
   const [selected, setSelected] = useState(0);
@@ -54,6 +54,7 @@ const Sidebar = () => {
               </div>
             );
           })}
+
           <div className="menuItem">
             <UilSignOutAlt />
           </div>

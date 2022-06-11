@@ -5,6 +5,11 @@
   padding-top: 4rem;
   transition: all 300ms ease;
 }
+
+.bars {
+  display: none;
+}
+
 .logo {
   display: flex;
   height: 5rem;
@@ -15,12 +20,14 @@
   justify-content: center;
   height: 4%;
 }
+
+.logo span span {
+  color: var(--pink);
+}
+
 .logo img {
   width: 3rem;
   height: 3rem;
-}
-.logo span span {
-  color: var(--pink);
 }
 
 .menu {
@@ -29,6 +36,7 @@
   flex-direction: column;
   gap: 2rem;
 }
+
 .menuItem {
   display: flex;
   align-items: center;
@@ -55,6 +63,7 @@
   background: var(--activeItem);
   margin-left: 0;
 }
+
 .active::before {
   content: "";
   width: 8px;
